@@ -22,7 +22,6 @@ const HOUR_COL = '#FFFF00';
 const MIN_COL = '#0000FF';
 const SEC_COL = '#90EE90';
  
-// the shorter window edge, minus a margin so the circle is never cut off
 function sketchSize() {
   return min(windowWidth, windowHeight) - 40;
 }
@@ -32,7 +31,6 @@ function setup() {
   lastMinute = minute();
 }
  
-// p5 calls this whenever the browser window changes size
 function windowResized() {
   resizeCanvas(sketchSize(), sketchSize());
 }
